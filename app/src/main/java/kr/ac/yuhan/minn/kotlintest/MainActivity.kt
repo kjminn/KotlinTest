@@ -1,5 +1,6 @@
 package kr.ac.yuhan.minn.kotlintest
 
+import android.graphics.Typeface
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
@@ -16,6 +17,9 @@ class MainActivity : AppCompatActivity() {
 
         binding.btn1.setOnClickListener(l)
         binding.btn2.setOnClickListener(l)
+        var assets = getAssets();
+        val t = Typeface.createFromAsset(assets, "fonts/NanumPen.ttf")
+        binding.btn1.typeface = t
     }
     var l = View.OnClickListener {
         binding.linear1.visibility = View.INVISIBLE
