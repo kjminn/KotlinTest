@@ -5,7 +5,6 @@ import android.os.Bundle
 import android.view.View
 import kr.ac.yuhan.minn.kotlintest.databinding.ActivityMainBinding
 
-
 class MainActivity : AppCompatActivity() {
     val binding by lazy {
         ActivityMainBinding.inflate(layoutInflater)
