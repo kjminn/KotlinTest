@@ -17,7 +17,7 @@ class MainActivity : AppCompatActivity() {
 
         binding.btn1.setOnClickListener(l)
         binding.btn2.setOnClickListener(l)
-        var assets = getAssets();
+
         val t = Typeface.createFromAsset(assets, "fonts/NanumPen.ttf")
         binding.btn1.typeface = t
     }
